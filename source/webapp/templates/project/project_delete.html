@@ -1,0 +1,19 @@
+{% extends 'base_2.html' %}
+{% block content %}
+    <div class="container">
+        <h1>Вы точно хотите удалить?</h1>
+        <div class="card " style="width: 18rem; margin: 20px">
+            <div class="card-body">
+                <h5 class="card-title">Проект под названием: {{ project.name }}</h5>
+            </div>
+             <form action="{% url 'confirm_delete_project' object.pk %}" method="post">
+            {% csrf_token %}
+            <div class="but" style="display: flex; margin-left: 10px">
+                <p><input type="submit" value="Удалить" style="width: 130px"></p>
+                <a href="{% url 'project_index' %}"><p><input type="button" value="Отмена" style="margin-left: 10px; width: 130px">
+                </p></a>
+            </div>
+        </form>
+        </div>
+    </div>
+{% endblock %}

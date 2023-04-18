@@ -1,0 +1,50 @@
+{% extends 'base_2.html' %}
+{% block menu %}
+    <a href="{% url 'add_view' object.pk %}">
+        <button type="button" style="margin-left: 10px" class="btn btn-warning">Добавить задачи</button>
+    </a>
+    <a href="{% url 'project_delete' object.pk %}">
+        <button type="button" class="btn btn-warning" style="margin-left: 10px">Удалить</button>
+    </a>
+    <a href="{% url 'project_update' object.pk %}">
+        <button type="button" style="margin-left: 10px" class="btn btn-warning">Редактировать</button>
+    </a>
+{% endblock %}
+{% block content %}
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold">{{ project.name }}</h1>
+        <div class="col-lg-12 mx-auto">
+            <p class="lead mb-4">{{ project.description }}</p>
+        <h3>Задачи</h3>
+            <div class="container">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Краткое содержание</th>
+                        <th scope="col">Описание</th>
+                        <th scope="col">Статус</th>
+                        <th scope="col">Тип</th>
+                    </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                    {% for tracker in trackers %}
+                        <tr>
+                            <td>{{ tracker.summary }}</td>
+                            <td>{{ tracker.description }}</td>
+                            <td class="lead mb-4">{% for status in tracker.status.all %} {{ status.name }}{% if not forloop.last %}, {% endif %}{% endfor %}</td>
+        <td class="lead mb-4">{% for type in tracker.type.all %} {{ type.name }}{% if not forloop.last %}, {% endif %}{% endfor %}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="{% url 'project_index' %}">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Вернуться назад</button>
+        </a>
+    </div>
+    </div>
+    </div>
+{% endblock %}
