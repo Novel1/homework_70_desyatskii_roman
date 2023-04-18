@@ -1,0 +1,290 @@
+[
+{
+  "model": "webapp.tracker",
+  "pk": 2,
+  "fields": {
+    "summary": "Task 4",
+    "description": "Доделать task 4",
+    "project": null,
+    "is_deleted": false,
+    "created_at": "2023-04-17T12:17:00.188Z",
+    "updated_at": "2023-04-17T12:17:02.170Z",
+    "deleted_at": null,
+    "status": [],
+    "type": []
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 3,
+  "fields": {
+    "summary": "Task 1",
+    "description": "Task numeber 1",
+    "project": 1,
+    "is_deleted": false,
+    "created_at": "2023-04-17T06:22:52.225Z",
+    "updated_at": "2023-04-17T15:35:34.500Z",
+    "deleted_at": "2023-04-17T15:35:34.500Z",
+    "status": [
+      1
+    ],
+    "type": [
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 4,
+  "fields": {
+    "summary": "Task 3",
+    "description": "Task number 3",
+    "project": 2,
+    "is_deleted": false,
+    "created_at": "2023-04-17T06:24:09.936Z",
+    "updated_at": "2023-04-18T03:33:57.253Z",
+    "deleted_at": null,
+    "status": [
+      2
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 8,
+  "fields": {
+    "summary": "Task 6",
+    "description": "Task number 6",
+    "project": 1,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:37:30.620Z",
+    "updated_at": "2023-04-18T03:37:30.620Z",
+    "deleted_at": null,
+    "status": [
+      2
+    ],
+    "type": [
+      4
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 9,
+  "fields": {
+    "summary": "Task 7",
+    "description": "Task number 7",
+    "project": 2,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:37:52.268Z",
+    "updated_at": "2023-04-18T03:37:52.268Z",
+    "deleted_at": null,
+    "status": [
+      1
+    ],
+    "type": [
+      4
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 12,
+  "fields": {
+    "summary": "Task 10",
+    "description": "Task number 10",
+    "project": 1,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:39:17.606Z",
+    "updated_at": "2023-04-18T03:39:17.606Z",
+    "deleted_at": null,
+    "status": [
+      3
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 13,
+  "fields": {
+    "summary": "Task 2",
+    "description": "Task number 2",
+    "project": 3,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:56:05.994Z",
+    "updated_at": "2023-04-18T03:56:05.994Z",
+    "deleted_at": null,
+    "status": [
+      1
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 14,
+  "fields": {
+    "summary": "Task 5",
+    "description": "Task number 5",
+    "project": 3,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:56:27.503Z",
+    "updated_at": "2023-04-18T03:56:27.503Z",
+    "deleted_at": null,
+    "status": [
+      1
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 15,
+  "fields": {
+    "summary": "Task 8",
+    "description": "Task number 8",
+    "project": 4,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:56:52.353Z",
+    "updated_at": "2023-04-18T03:56:52.353Z",
+    "deleted_at": null,
+    "status": [
+      3
+    ],
+    "type": [
+      4
+    ]
+  }
+},
+{
+  "model": "webapp.tracker",
+  "pk": 16,
+  "fields": {
+    "summary": "Task 9",
+    "description": "Task number 9",
+    "project": 4,
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:57:22.141Z",
+    "updated_at": "2023-04-18T03:57:22.141Z",
+    "deleted_at": null,
+    "status": [
+      1
+    ],
+    "type": [
+      3
+    ]
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "name": "In Progress"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "name": "Task"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 4,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 1,
+  "fields": {
+    "name": "Project 1",
+    "description": "Project number 1",
+    "start_date": "2023-05-01",
+    "end_date": "2023-05-31",
+    "is_deleted": false,
+    "created_at": "2023-04-17T06:20:32.849Z",
+    "updated_at": "2023-04-18T07:13:09.714Z",
+    "deleted_at": null,
+    "user": []
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 2,
+  "fields": {
+    "name": "Project 2",
+    "description": "Project number 2",
+    "start_date": "2022-12-12",
+    "end_date": "2023-12-12",
+    "is_deleted": false,
+    "created_at": "2023-04-17T06:23:47.008Z",
+    "updated_at": "2023-04-18T05:56:37.292Z",
+    "deleted_at": null,
+    "user": []
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 3,
+  "fields": {
+    "name": "Project 3",
+    "description": "Project number 3",
+    "start_date": "2022-09-03",
+    "end_date": "2022-10-03",
+    "is_deleted": false,
+    "created_at": "2023-04-17T07:33:24.568Z",
+    "updated_at": "2023-04-18T03:53:44.844Z",
+    "deleted_at": "2023-04-18T03:53:44.844Z",
+    "user": []
+  }
+},
+{
+  "model": "webapp.project",
+  "pk": 4,
+  "fields": {
+    "name": "Project 4",
+    "description": "Project number 4",
+    "start_date": "2021-01-12",
+    "end_date": "2021-02-13",
+    "is_deleted": false,
+    "created_at": "2023-04-18T03:34:52.906Z",
+    "updated_at": "2023-04-18T03:47:19.336Z",
+    "deleted_at": "2023-04-18T03:47:19.336Z",
+    "user": []
+  }
+}
+]
